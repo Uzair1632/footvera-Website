@@ -1,0 +1,6 @@
+{
+  "name": "SolePoint Footwear Store",
+  "description": "Shop Footvera for stylish, comfortable, and quality footwear designed for every step. Discover shoes that combine modern style, comfort, and everyday wear.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
