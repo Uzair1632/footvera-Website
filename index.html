@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footvera | Stylish &amp; Comfortable Shoes for Every Step</title>
+    <meta name="description" content="Shop Footvera for stylish, comfortable, and quality footwear designed for every step. Discover shoes that combine modern style, comfort, and everyday wear." />
+    <meta property="og:title" content="Footvera | Stylish &amp; Comfortable Shoes for Every Step" />
+    <meta property="og:description" content="Shop Footvera for stylish, comfortable, and quality footwear designed for every step. Discover shoes that combine modern style, comfort, and everyday wear." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Safe fetch descriptor fix for iframe sandboxes -->
+    <script>
+      (function() {
+        try {
+          var origFetch = typeof window !== 'undefined' && window.fetch ? window.fetch.bind(window) : undefined;
+          var _currentFetch = origFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _currentFetch;
+            },
+            set: function(fn) {
+              _currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Continue safely if already defined or restricted
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-amber-400 selection:text-neutral-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
