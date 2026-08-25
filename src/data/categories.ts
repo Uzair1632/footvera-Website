@@ -284,7 +284,7 @@ export const HERO_SLIDES = [
   },
   {
     id: 3,
-    badge: 'Free Express Delivery across Pakistan Over Rs. 4000',
+    badge: 'Free Express Delivery across Pakistan Over Rs. 3600',
     title: 'Executive Italian Leather & Urban Nitro Runners',
     subtitle: 'From boardroom Goodyear-welted oxfords to responsive street runners, engineered for Pakistan’s all-day wear.',
     ctaText: 'Shop Men’s Formal',
@@ -310,7 +310,7 @@ export const FAQ_LIST = [
   {
     category: 'Shipping & Delivery in Pakistan',
     question: 'What are the delivery charges?',
-    answer: 'Delivery is completely FREE across Pakistan on all orders over Rs. 4000. For orders below Rs. 4000, a flat standard courier rate of Rs. 250 applies.',
+    answer: 'Delivery is completely FREE across Pakistan on all orders over Rs. 3600. For orders below Rs. 3600, a flat standard courier rate of Rs. 250 applies.',
   },
   {
     category: 'Sizing & Fit',

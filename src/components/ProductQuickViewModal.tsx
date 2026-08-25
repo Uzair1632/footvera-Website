@@ -432,7 +432,7 @@ export const ProductQuickViewModal: React.FC = () => {
               <div className="pt-4 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-500">
                 <div className="flex items-center gap-3 font-medium">
                   <span className="flex items-center gap-1">
-                    <Truck className="w-3.5 h-3.5 text-amber-600" /> Free Shipping &gt; Rs. 4000
+                    <Truck className="w-3.5 h-3.5 text-amber-600" /> Free Shipping &gt; Rs. 3600
                   </span>
                   <span className="hidden sm:flex items-center gap-1">
                     <RefreshCw className="w-3.5 h-3.5 text-amber-600" /> 7-Day Easy Swap

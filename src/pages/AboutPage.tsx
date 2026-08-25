@@ -97,7 +97,7 @@ export const AboutPage: React.FC = () => {
             Ready to Upgrade Your Footwear Collection?
           </h3>
           <p className="text-xs sm:text-sm text-neutral-400 max-w-lg mx-auto">
-            Enjoy free delivery across Pakistan on orders above Rs. 4000 with Cash on Delivery and 7-day doorstep size replacement.
+            Enjoy free delivery across Pakistan on orders above Rs. 3600 with Cash on Delivery and 7-day doorstep size replacement.
           </p>
           <button
             onClick={() => navigateTo('shop')}

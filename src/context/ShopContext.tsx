@@ -525,7 +525,7 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Calculations in PKR
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
   const cartSubtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
-  const freeShippingThreshold = 3500; // Rs. 3500
+  const freeShippingThreshold = 3600; // Rs. 3600
   const isFreeShippingEligible = cartSubtotal >= freeShippingThreshold;
   const freeShippingRemaining = Math.max(0, freeShippingThreshold - cartSubtotal);
 

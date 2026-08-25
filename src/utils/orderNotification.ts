@@ -57,7 +57,7 @@ export const formatOrderWhatsAppMessage = (order: OrderDetails): string => {
       : 'Online Bank Card';
 
   const deliveryLabel =
-    order.shipping === 0 ? 'FREE Delivery (Order > Rs. 4000)' : `Rs. ${order.shipping} (Standard Courier)`;
+    order.shipping === 0 ? 'FREE Delivery (Order > Rs. 3600)' : `Rs. ${order.shipping} (Standard Courier)`;
 
   return (
     `🛍️ *NEW ORDER NOTIFICATION - SOLEPOINT PAKISTAN*\n` +

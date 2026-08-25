@@ -522,7 +522,7 @@ export const TrackOrderPage: React.FC = () => {
                   )}
                   <div className="flex justify-between text-neutral-600">
                     <span>Courier Shipping:</span>
-                    <span>{searchedOrder.shipping === 0 ? 'FREE (Order > Rs. 4000)' : formatPrice(searchedOrder.shipping)}</span>
+                    <span>{searchedOrder.shipping === 0 ? 'FREE (Order > Rs. 3600)' : formatPrice(searchedOrder.shipping)}</span>
                   </div>
                   <div className="flex justify-between text-sm font-black text-neutral-900 pt-1.5 border-t border-neutral-200">
                     <span>Total Amount:</span>

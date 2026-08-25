@@ -107,7 +107,7 @@ export const Header: React.FC = () => {
             </span>
             <span className="text-neutral-600">|</span>
             <span className="text-neutral-200 font-medium whitespace-nowrap">
-              Orders above <b className="text-white">Rs. 3500</b>
+              Orders above <b className="text-white">Rs. 3600</b>
             </span>
             <span className="text-neutral-600 hidden sm:inline">|</span>
             <span className="text-neutral-400 hidden sm:inline font-medium whitespace-nowrap">
@@ -809,7 +809,7 @@ export const Header: React.FC = () => {
               <div className="p-3.5 border-t border-neutral-200 bg-neutral-50 shrink-0 text-xs text-neutral-600 space-y-2">
                 <div className="flex items-center gap-2">
                   <Truck className="w-3.5 h-3.5 text-neutral-900 shrink-0" />
-                  <span className="truncate">Free Delivery over Rs. 4000 across Pakistan</span>
+                  <span className="truncate">Free Delivery over Rs. 3600 across Pakistan</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-3.5 h-3.5 text-neutral-900 shrink-0" />

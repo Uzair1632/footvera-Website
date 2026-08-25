@@ -91,7 +91,7 @@ export const CartDrawer: React.FC = () => {
               </button>
             </div>
 
-            {/* Free Shipping Progress Bar (Pakistan Rs. 4000) */}
+            {/* Free Shipping Progress Bar (Pakistan Rs. 3600) */}
             <div className="px-6 py-3.5 bg-neutral-900 text-white text-xs border-b border-neutral-800">
               <div className="flex items-center justify-between mb-1.5 font-medium">
                 <span className="flex items-center gap-1.5">

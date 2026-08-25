@@ -151,8 +151,8 @@ export const CheckoutPage: React.FC = () => {
 
   // Real shoe price (cartSubtotal) remains exactly the real item price
   const discountAmount = appliedPromo ? (cartSubtotal * appliedPromo.percent) / 100 : 0;
-  // Shipping cost: When cart >= 4000, delivery is 100% FREE on ALL methods (COD & Online). If < 4000, Rs. 250 delivery charges apply.
-  const isFreeDelivery = cartSubtotal >= 4000;
+  // Shipping cost: When cart >= 3600, delivery is 100% FREE on ALL methods (COD & Online). If < 3600, Rs. 250 delivery charges apply.
+  const isFreeDelivery = cartSubtotal >= 3600;
   const shippingCost = isFreeDelivery ? 0 : 250;
   const orderTotal = cartSubtotal - discountAmount + shippingCost;
 
@@ -302,7 +302,7 @@ export const CheckoutPage: React.FC = () => {
               : 'Online Card Payment Received',
             description: paymentMethod === 'cod'
               ? (shippingCost === 0
-                  ? `COD order confirmed with 100% FREE Delivery (Order over Rs. 4000). Total payable: ${formatPrice(orderTotal)} on doorstep delivery.`
+                  ? `COD order confirmed with 100% FREE Delivery (Order over Rs. 3600). Total payable: ${formatPrice(orderTotal)} on doorstep delivery.`
                   : `COD order registered. Delivery charges (Rs. ${shippingCost}) added to shoe price. Please keep ${formatPrice(orderTotal)} cash ready for TCS rider.`)
               : paymentMethod === 'jazzcash-easypaisa'
               ? `Payment submitted via JazzCash / EasyPaisa (TID: ${transactionId || 'Verification in progress'}). Order registered.`
@@ -442,7 +442,7 @@ export const CheckoutPage: React.FC = () => {
                 <p className="text-[11px] leading-relaxed">
                   {completedOrder.shipping === 0 ? (
                     <>
-                      <b>100% FREE Delivery Applied</b> (Order above Rs. 4000). Please keep exact cash of{' '}
+                      <b>100% FREE Delivery Applied</b> (Order above Rs. 3600). Please keep exact cash of{' '}
                       <b>{formatPrice(completedOrder.total)}</b> ready for the TCS Express rider upon parcel arrival.
                     </>
                   ) : (
@@ -1088,7 +1088,7 @@ export const CheckoutPage: React.FC = () => {
                           </span>
                           {isFreeDelivery ? (
                             <span className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300">
-                              FREE Delivery (Order &gt; Rs. 4000)
+                              FREE Delivery (Order &gt; Rs. 3600)
                             </span>
                           ) : (
                             <span className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300">
@@ -1106,7 +1106,7 @@ export const CheckoutPage: React.FC = () => {
                                 <span>100% FREE Delivery Applied!</span>
                               </div>
                               <p className="text-[11px] text-emerald-900 leading-relaxed">
-                                Because your order is over Rs. 4000, <b>100% FREE Delivery</b> applies! The shoe price remains <b>{formatPrice(cartSubtotal)}</b> with Rs. 0 delivery charges. Total amount to pay TCS courier rider on delivery: <b>{formatPrice(orderTotal)}</b>.
+                                Because your order is over Rs. 3600, <b>100% FREE Delivery</b> applies! The shoe price remains <b>{formatPrice(cartSubtotal)}</b> with Rs. 0 delivery charges. Total amount to pay TCS courier rider on delivery: <b>{formatPrice(orderTotal)}</b>.
                               </p>
                             </div>
                           ) : (
@@ -1119,7 +1119,7 @@ export const CheckoutPage: React.FC = () => {
                                 Shoe price is <b>{formatPrice(cartSubtotal)}</b>. Standard courier delivery charges of Rs. {shippingCost} are added. Total amount to pay TCS courier rider at your doorstep: <b>{formatPrice(orderTotal)}</b>.
                               </p>
                               <p className="text-[10px] text-amber-800 font-medium">
-                                💡 Tip: Add <b>{formatPrice(4000 - cartSubtotal)}</b> more to your order to get <b>100% FREE Delivery</b> across Pakistan!
+                                💡 Tip: Add <b>{formatPrice(3600 - cartSubtotal)}</b> more to your order to get <b>100% FREE Delivery</b> across Pakistan!
                               </p>
                             </div>
                           )
@@ -1250,7 +1250,7 @@ export const CheckoutPage: React.FC = () => {
                   <div>
                     <span className="font-medium text-neutral-700">Courier Delivery (Pakistan)</span>
                     {isFreeDelivery ? (
-                      <p className="text-[10px] text-emerald-600 font-semibold">100% Free on orders above Rs. 4000</p>
+                      <p className="text-[10px] text-emerald-600 font-semibold">100% Free on orders above Rs. 3600</p>
                     ) : (
                       <p className="text-[10px] text-amber-700 font-semibold">Standard courier charges applied</p>
                     )}
